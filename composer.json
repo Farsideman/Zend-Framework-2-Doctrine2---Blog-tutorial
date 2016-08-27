@@ -1,0 +1,20 @@
+{
+    "name": "GSSCC Website",
+    "description": "Website using ZF2 and Doctrine2",
+    "author": "John Pedosuk",
+    "website": "None",
+    "license": "None",
+    "keywords": [
+        "framework",
+        "zf2",
+        "doctrine2",
+        "gsscc"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "~2.5",
+        "doctrine/doctrine-orm-module": "^1.0",
+        "doctrine/migrations": "^1.4"
+    }
+}

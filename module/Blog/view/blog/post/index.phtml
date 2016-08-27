@@ -1,0 +1,19 @@
+/** @var Blog\Entity\Post[] $posts */
+?>
+<section>
+    <?php foreach ($posts as $post) : ?>
+        <article class="blogPost">
+            <header>
+                <h2>
+                    <?= $this->escapeHtml($post->getTitle()) ?>
+                </h2>
+                <h3>
+                    <?= $this->translate('Created') ?>: <?= $post->getCreated()->format('d-m-Y') ?>
+                </h3>
+            </header>
+            <div class="blogBody">
+                <?= $this->escapeHtml($post->getBody()) ?>
+            </div>
+        </article>
+    <?php endforeach ?>
+</section>
